@@ -1,0 +1,47 @@
+- company: Microsoft
+  role: Software Engineer II
+  location: Redmond, WA
+  startDate: 2025-05
+  endDate: null
+  bullets:
+  - runs:
+    - text: Migrated security-critical ETL pipelines to a sovereign-cloud–compliant deployment architecture using IaC, delivering 40+ production pipelines.
+  - runs:
+    - text: Developed prompt-assisted workflows and build scripts to automate repeatable pipeline migration tasks, significantly reducing manual toil and accelerating future migrations.
+  - runs:
+    - text: Redesigned virtual machine inventory reporting to rely on day-one cloud data sources, contributing to inventory shift-left initiatives by enabling earlier availability of key security KPIs in new sovereign environments.
+- company: JumpShot, Inc.
+  role: Software Engineer
+  location: Kent, WA
+  startDate: 2022-11
+  endDate: 2025-02
+  bullets:
+  - runs:
+    - text: Designed and delivered a full-stack prototype experience for a next gen basketball entertainment venue, integrating React, Node.js, and MongoDB for seamless game management & UX, securing >$5m of funding.
+  - runs:
+    - text: Engineered real-time synchronization between hardware, AI, and UI with Socket.io, MQTT, & Modbus to enable live gameplay with dynamic graphics by achieving imperceptible latency across 10+ services/devices.
+  - runs:
+    - text: Trained and implemented a custom computer vision model to track players and basketballs in low-light conditions using Python, CVAT, and Roboflow, significantly improving accuracy.
+  - runs:
+    - text: Created AI-powered games, leveraging LLMs to dynamically generate unlimited versions of gameplay.
+  - runs:
+    - text: Created an HMI and custom sensor modules communicating via MQTT and Modbus to enable real-time gameplay on a PLC-operated machine.
+  - runs:
+    - text: Co-invented hardware/software solutions described in 4 patent applications, driving innovative experiences.
+  - runs:
+    - text: Produced specifications & vetted 5+ vendors, selecting the optimal vendor to iterate & scale into final production.
+- company: GetSetUp
+  role: Software Engineer
+  location: Remote
+  startDate: 2022-03
+  endDate: 2022-11
+  bullets:
+  - runs:
+    - text: 'Owned full-stack development to reduce support costs by >$1m/yr by automating agent workflows and minimizing ticket volume, collaborating with support leads to create the following tooling:'
+    children:
+    - runs:
+      - text: Migrated to Zendesk CRM by building a custom help center, integrating the chat widget, and connecting user databases via event-driven microservices.
+    - runs:
+      - text: Developed services to import existing data and to merge contextual data into Zendesk tickets for class chat sessions, enabling agents to identify users.
+  - runs:
+    - text: Implemented event-based UX tracking to measure the impact of interface optimizations on search performance & user engagement, leading to improved overall user experience.

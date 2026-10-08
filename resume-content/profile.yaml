@@ -1,0 +1,16 @@
+name: Ishan Jaidka
+address: Seattle, WA
+phone: +1 (425) 770-0077
+email: ishan@jaidka.dev
+miscellaneous:
+  text: US Citizen
+  show: true
+links:
+  linkedin:
+    show: true
+    text: linkedin.com/in/ishanjaidka
+    url: https://www.linkedin.com/in/ishanjaidka
+  github:
+    show: false
+    text: github.com/ishan-jaidka
+    url: https://github.com/ishan-jaidka

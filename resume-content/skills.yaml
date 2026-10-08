@@ -1,0 +1,46 @@
+- id: skills
+  label: Skills & Technologies
+  groups:
+  - items:
+    - JavaScript
+    - Python
+    - SQL
+    - KQL
+    - C#
+    - Backend systems
+    - Distributed systems
+    - Infrastructure-as-code
+    - ETL pipelines
+    - Azure DevOps
+- id: cloud
+  label: Cloud Experience
+  groups:
+  - label: Azure
+    items:
+    - EV2
+    - ADF
+    - Kusto
+    - Functions
+    - Key Vault
+    - Monitor
+  - label: AWS
+    items:
+    - Lambda
+    - S3
+    - RDS
+    - API Gateway
+    - IoT Core
+    - Timestream
+- id: automation
+  label: Robotics & Automation
+  groups:
+  - items:
+    - Microcontrollers
+    - MQTT
+    - Modbus
+    - PLC systems
+    - Limit switches
+    - Sensors
+    - Motion controllers
+    - Low voltage control circuits
+    - I/O systems

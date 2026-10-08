@@ -1,0 +1,5 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$comment": "Editor schema reference; validation rules live in src/resume.schema.json.",
+  "$ref": "../resume.schema.json#/properties/experience"
+}

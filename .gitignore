@@ -1,0 +1,31 @@
+# Generated LaTeX files
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex(busy)
+*.xdv
+*.dvi
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+*.nav
+*.snm
+*.vrb
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Pipeline compiler output and local Python environment
+/src/build/
+/.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
