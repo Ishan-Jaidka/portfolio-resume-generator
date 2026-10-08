@@ -1,0 +1,101 @@
+/* Adapted from personal-site's transparent hamburger and right-hand slide menu. */
+.mobile-navigation { display: none; }
+.hamburger-icon { display: block; height: 14px; position: relative; width: 20px; }
+.hamburger-icon span {
+  background-color: var(--color-fg-bold);
+  border-radius: 2px;
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  transition: top var(--duration-normal) var(--ease-menu), bottom var(--duration-normal) var(--ease-menu),
+    opacity var(--duration-normal) var(--ease-menu), transform var(--duration-normal) var(--ease-menu);
+}
+.hamburger-icon span:nth-child(1) { top: 0; }
+.hamburger-icon span:nth-child(2) { top: 50%; transform: translateY(-50%); }
+.hamburger-icon span:nth-child(3) { bottom: 0; }
+.hamburger-icon--open span:nth-child(1) { top: 50%; transform: translateY(-50%) rotate(45deg); }
+.hamburger-icon--open span:nth-child(2) { opacity: 0; transform: translateY(-50%) scaleX(0); }
+.hamburger-icon--open span:nth-child(3) { bottom: 50%; transform: translateY(50%) rotate(-45deg); }
+
+@media (max-width: 735px) {
+  .portfolio-header { flex-direction: row; align-items: center; padding: 0.75rem 1rem 0.25rem; min-height: 3.25rem; }
+  .portfolio-header .desktop-navigation, .portfolio-identity .portfolio-name { display: none; }
+  .portfolio-identity { align-self: center; }
+  .portfolio-section { scroll-margin-top: 6rem; }
+  .mobile-navigation { display: block; }
+  .mobile-menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+    cursor: pointer;
+    transition: opacity 200ms var(--ease-out);
+  }
+  .mobile-menu-toggle:hover { opacity: 0.5; }
+  .mobile-menu-toggle:focus-visible .hamburger-icon span,
+  .mobile-menu-close:focus-visible .hamburger-icon span { background-color: var(--color-accent); }
+  .mobile-menu {
+    inset: 0 0 0 auto;
+    margin: 0;
+    width: 300px;
+    max-width: 82vw;
+    max-height: none;
+    height: 100dvh;
+    padding: max(1.5rem, env(safe-area-inset-top)) 1.5rem 1.5rem;
+    border: 0;
+    border-left: 1px solid var(--color-fg-bold);
+    background: var(--color-bg-alt);
+    color: var(--color-fg);
+    overflow-y: auto;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: transform var(--duration-normal) var(--ease-menu), opacity var(--duration-normal) var(--ease-menu),
+      display var(--duration-normal) allow-discrete, overlay var(--duration-normal) allow-discrete;
+  }
+  .mobile-menu:popover-open { opacity: 1; transform: translateX(0); }
+  @starting-style { .mobile-menu:popover-open { opacity: 0; transform: translateX(100%); } }
+  .mobile-menu::backdrop {
+    background: var(--color-overlay-darker);
+    opacity: 0;
+    transition: opacity var(--duration-normal) var(--ease-menu),
+      display var(--duration-normal) allow-discrete, overlay var(--duration-normal) allow-discrete;
+  }
+  .mobile-menu:popover-open::backdrop { opacity: 1; }
+  @starting-style { .mobile-menu:popover-open::backdrop { opacity: 0; } }
+  .mobile-menu-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    margin: 0 -0.75rem 0.5rem auto;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+  }
+  .mobile-menu-close:hover { opacity: 0.5; }
+  .mobile-menu nav { display: flex; flex-direction: column; }
+  .mobile-menu nav a {
+    display: block;
+    padding: 0.9rem 0;
+    border-bottom: 1px solid var(--color-border);
+    background-image: none;
+    font-family: var(--font-display);
+    font-size: var(--text-ui);
+    color: var(--color-fg-light);
+  }
+  .mobile-menu nav a:first-child { border-top: 1px solid var(--color-border); }
+  .mobile-menu nav a:hover { color: var(--color-fg-bold); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .mobile-menu-toggle, .mobile-menu, .mobile-menu::backdrop, .hamburger-icon span { transition: none; }
+}
+@media print { .mobile-navigation { display: none !important; } }

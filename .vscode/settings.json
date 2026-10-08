@@ -1,7 +1,7 @@
 {
   "latex-workshop.latex.build.enableMagicComments": false,
   "latex-workshop.latex.autoBuild.run": "never",
-  "latex-workshop.latex.outDir": "%WORKSPACE_FOLDER%/resume-output",
+  "latex-workshop.latex.outDir": "%WORKSPACE_FOLDER%/resume/output",
   "latex-workshop.latex.recipe.default": "lastUsed",
   "latex-workshop.latex.recipes": [
     {
@@ -22,25 +22,25 @@
       "name": "resume-macos",
       "command": "%WORKSPACE_FOLDER%/.venv/bin/python",
       "args": [
-        "%WORKSPACE_FOLDER%/src/scripts/build_resume.py"
+        "%WORKSPACE_FOLDER%/resume/scripts/build_resume.py"
       ]
     },
     {
       "name": "resume-windows",
       "command": "%WORKSPACE_FOLDER%/.venv/Scripts/python.exe",
       "args": [
-        "%WORKSPACE_FOLDER%/src/scripts/build_resume.py"
+        "%WORKSPACE_FOLDER%/resume/scripts/build_resume.py"
       ]
     }
   ],
   "latex-workshop.view.pdf.viewer": "tab",
   "yaml.schemas": {
-    "./src/schemas/profile.schema.json": "resume-content/profile.yaml",
-    "./src/schemas/skills.schema.json": "resume-content/skills.yaml",
-    "./src/schemas/experience.schema.json": "resume-content/experience.yaml",
-    "./src/schemas/projects.schema.json": "resume-content/projects.yaml",
-    "./src/schemas/education.schema.json": "resume-content/education.yaml",
-    "./src/schemas/interests.schema.json": "resume-content/interests.yaml",
-    "./src/schemas/options.schema.json": "resume-content/options.yaml"
+    "./resume/schemas/profile.schema.json": "content/profile.yaml",
+    "./resume/schemas/skills.schema.json": "content/skills.yaml",
+    "./resume/schemas/experience.schema.json": "content/experience.yaml",
+    "./resume/schemas/projects.schema.json": "content/projects.yaml",
+    "./resume/schemas/education.schema.json": "content/education.yaml",
+    "./resume/schemas/interests.schema.json": "content/interests.yaml",
+    "./resume/schemas/options.schema.json": "content/options.yaml"
   }
 }

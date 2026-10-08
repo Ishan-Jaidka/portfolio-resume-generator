@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+@import './styles/tokens/colors.css';
+@import './styles/tokens/typography.css';
+@import './styles/tokens/spacing.css';
+@import './styles/tokens/effects.css';
+@import './styles/tokens/motion.css';
+@import './styles/base/reset.css';
+@import './styles/base/links.css';
+@import './styles/base/typography.css';
+@import './styles/components/buttons.css';
+@import './styles/components/cards.css';
+@import './styles/layout/page.css';
+@import './styles/pages/home.css';
+@import './styles/pages/resume.css';
+@import './styles/pages/content.css';
+
+@import './styles/pages/portfolio.css';
+@import './styles/components/mobile-navigation.css';

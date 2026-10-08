@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../portfolio/portfolio.schema.json
+# Website presentation only. Resume facts stay in the other shared YAML files.
+site:
+  url: https://ishan.jaidka.dev
+  resumeLabel: Resume PDF
+header:
+  showName: false
+hero:
+  eyebrow: Software / hardware / the outdoors
+  intro: I build software that connects cloud systems, hardware, and people.
+  description: From full-stack products to robotics and automation, I like turning ideas into things people can use.
+  portrait:
+    src: /images/ishan-current.jpeg
+    alt: Portrait of Ishan Jaidka
+  primaryAction:
+    label: Explore my work
+    section: projects
+theme:
+  accent: '#ffc242'
+  accentHover: '#ffd477'
+# Remove a section to hide it; reorder this list to change the page and navigation.
+sections:
+  - id: projects
+    title: Things I've built
+    navLabel: Projects
+  - id: experience
+    title: Where I've worked
+    navLabel: Experience
+  - id: interests
+    title: Away from the keyboard
+    navLabel: null
+  - id: education
+    title: Education
+    navLabel: null
+contacts:
+  showEmail: true
+  showPhone: false
+  showMiscellaneous: false
+  # Website visibility is independent of the PDF's profile link flags.
+  links: [github, linkedin]
+experience:
+  previewBullets: 0
+  expandLabel: More about this role
+# Keys reference the exact project name in projects.yaml. These are display hints,
+# not copies of project descriptions, links, or resume accomplishments.
+projects:
+  Quieter Cities:
+    category: Civic tech
+    illustration: city
+    accent: '#b8d4fc'
+    linkLabels:
+      'https://quietercities.org?source=resume': Visit site
+  Ski DIN Calculator:
+    category: Outdoor tools
+    illustration: calculator
+    accent: '#ffc242'
+  Capstone - Automated Greenhouse:
+    category: Hardware + software
+    illustration: greenhouse
+    accent: '#b9d6a5'
+# For a real project image, add image: {src: /images/example.webp, alt: ...}
+# to its entry above. New projects render automatically without an entry here.

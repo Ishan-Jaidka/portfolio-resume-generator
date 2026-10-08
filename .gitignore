@@ -24,8 +24,23 @@
 Thumbs.db
 
 # Pipeline compiler output and local Python environment
-/src/build/
+/resume/build/
 /.venv/
 __pycache__/
 *.py[cod]
 .pytest_cache/
+
+# Portfolio dependencies, build output, and generated PDF copy
+/portfolio/node_modules/
+/portfolio/.next/
+/portfolio/out/
+/portfolio/public/resume.pdf
+/portfolio/*.tsbuildinfo
+/portfolio/.vercel/
+
+# Local environment settings (keep shareable examples)
+.env*
+!.env.example
+
+# Vercel CLI state when invoked from the monorepo root
+/.vercel/
